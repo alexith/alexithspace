@@ -9,11 +9,29 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to bottom, #0a0a0a, #121212);
+      background: linear-gradient(160deg, #0f2027, #203a43, #2c5364, #1b2735, #090a0f);
+      background-attachment: fixed;
       color: #e0e0e0;
       overflow-x: hidden;
-    }header {
-  background: linear-gradient(to bottom right, #0a0a0a, #1a1a1a);
+    }#stars {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  left:0;
+  background: transparent url('https://i.ibb.co/2PjG1v9/stars.png') repeat;
+  z-index: -1;
+  opacity: 0.1;
+  animation: moveStars 200s linear infinite;
+}
+
+@keyframes moveStars {
+  from {background-position: 0 0;}
+  to {background-position: 10000px 5000px;}
+}
+
+header {
+  background: radial-gradient(circle, rgba(32,58,67,1) 0%, rgba(15,32,39,1) 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +43,7 @@
 }
 
 header h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #00ffe1;
   letter-spacing: 2px;
   margin-bottom: 1rem;
@@ -33,44 +51,60 @@ header h1 {
 }
 
 header p {
-  font-size: 1.4rem;
-  color: #cccccc;
+  font-size: 1.6rem;
+  color: #eeeeee;
   margin-bottom: 2rem;
 }
 
 header img {
-  max-width: 90%;
+  max-width: 95%;
   border-radius: 20px;
-  box-shadow: 0 0 40px rgba(0,255,255,0.2);
-  transition: transform 0.5s;
+  box-shadow: 0 0 50px rgba(0,255,255,0.2);
+  transition: transform 0.5s, box-shadow 0.5s;
 }
 
 header img:hover {
-  transform: scale(1.03);
+  transform: scale(1.04);
+  box-shadow: 0 0 60px rgba(0,255,255,0.4);
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+  header p {
+    font-size: 1.2rem;
+  }
+  .button {
+    padding: 0.7rem 1.8rem;
+    font-size: 0.9rem;
+  }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
+  from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
 section {
-  padding: 5rem 2rem;
-  max-width: 1000px;
+  padding: 4rem 2rem;
+  max-width: 1100px;
   margin: auto;
   border-bottom: 1px solid rgba(255,255,255,0.05);
+  backdrop-filter: blur(4px);
 }
 
 section h2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: #ffcc00;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 section p, li {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  color: #bbbbbb;
+  font-size: 1.1rem;
+  line-height: 2;
+  letter-spacing: 0.5px;
+  color: #dddddd;
 }
 
 ul {
@@ -79,7 +113,7 @@ ul {
 }
 
 ul li {
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 a {
@@ -92,34 +126,45 @@ a:hover {
 }
 
 .button {
-  background: #00ffe1;
+  background: rgba(0,255,225,0.8);
   color: #0a0a0a;
-  padding: 0.8rem 2rem;
-  border-radius: 30px;
+  padding: 0.9rem 2.2rem;
+  border-radius: 50px;
   text-transform: uppercase;
   font-weight: bold;
   display: inline-block;
-  margin-top: 1rem;
-  box-shadow: 0 4px 10px rgba(0,255,225,0.2);
+  margin-top: 1.2rem;
+  box-shadow: 0 4px 15px rgba(0,255,225,0.3);
   transition: background 0.3s, transform 0.3s;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px rgba(0,255,225,0.3);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(0,255,225,0.6);
+  }
 }
 
 .button:hover {
   background: #00ccaa;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
 footer {
   text-align: center;
   padding: 3rem 2rem;
-  background: #111;
-  font-size: 0.9rem;
-  color: #777;
+  background: #1a1a1a;
+  font-size: 0.95rem;
+  color: #999;
 }
 
   </style>
 </head>
 <body>
+  <div id="stars"></div>
   <header>
     <h1>AlexithSpace</h1>
     <p>Sound. Story. Vision.</p>
@@ -127,7 +172,7 @@ footer {
     <a href="#about" class="button">Explore</a>
   </header>  <section id="about">
     <h2>About Me</h2>
-    <p>I am <strong>Alexith</strong> — a multi-dimensional creator fusing music, stories, visuals, and code into transcendent experiences. My art reflects themes of solitude, time, resilience, and cosmic wonder — creating portals for reflection and inner exploration.</p>
+    <p>I am <strong>Alexith</strong> — a boundary-pushing artist fusing sound, code, and story into immersive realities. My universe is built on themes of space, time, resilience, and the quest for identity and freedom. Through soundscapes, sci-fi, digital art, and interactive games, I tell stories that awaken something ancient and vast inside every soul.</p>
   </section>  <section>
     <h2>🚀 Explore My Work</h2>
     <ul>
@@ -138,7 +183,7 @@ footer {
     </ul>
   </section>  <section>
     <h2>📬 Contact & Collaborate</h2>
-    <p>Let’s connect and build new worlds. For collaborations, commissions, or cosmic conversations, reach me here:</p>
+    <p>Let’s co-create visionary worlds, soundscapes, and stories. Reach out to bring ideas to life or to connect as fellow travelers of the unknown.</p>
     <ul>
       <li>Email: <a href="mailto:akshaycy2@gmail.com">akshaycy2@gmail.com</a></li>
       <li><a href="https://instagram.com/alexithspace" target="_blank">Instagram DM</a></li>
@@ -146,8 +191,9 @@ footer {
     </ul>
   </section>  <section>
     <h2>🌱 Vision</h2>
-    <p>I believe creativity is the last form of true magic — a gateway to explore identity, meaning, and imagination through timeless digital realms. Every creation is a signal — a memory from the future, calling others home to their own cosmic story.</p>
+    <p>Through technology, art, and sound, I explore humanity’s ancient questions and future frontiers. Each creation is a signal from the depths of consciousness to those who seek the beauty of the unknown. Welcome to the cosmic diary of a wandering mind.</p>
   </section>  <footer>
-    <p>&copy; 2025 AlexithSpace. Designed with love, vision, and code by <strong>Alexith</strong>.</p>
-  </footer></body>
+    <p>&copy; 2025 AlexithSpace. Designed with heart, vision, and cosmic wonder by <strong>Alexith</strong>.</p>
+  </footer>
+</body>
 </html>
