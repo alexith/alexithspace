@@ -6,28 +6,14 @@
   <link rel="icon" href="alexithspace.png">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(160deg, #0f2027, #203a43, #2c5364, #1b2735, #090a0f);
-      background-attachment: fixed;
-      color: #e0e0e0;
-      overflow-x: hidden;
-    }#stars {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top:0;
-  left:0;
-  background: transparent url('https://i.ibb.co/2PjG1v9/stars.png') repeat;
-  z-index: -1;
-  opacity: 0.1;
-  animation: moveStars 200s linear infinite;
-}
-
-@keyframes moveStars {
-  from {background-position: 0 0;}
-  to {background-position: 10000px 5000px;}
+    html {
+      scroll-behavior: smooth;
+    }body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+  color: #e0e0e0;
+  overflow-x: hidden;
 }
 
 header {
@@ -39,71 +25,56 @@ header {
   justify-content: center;
   text-align: center;
   padding: 2rem;
-  animation: fadeIn 2s ease-out;
+  animation: fadeIn 1s ease-out;
 }
 
 header h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: #00ffe1;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   margin-bottom: 1rem;
-  text-shadow: 0 0 10px rgba(0,255,225,0.5);
+  text-shadow: 0 0 10px rgba(0,255,225,0.4);
 }
 
 header p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #eeeeee;
   margin-bottom: 2rem;
 }
 
 header img {
-  max-width: 95%;
-  border-radius: 20px;
-  box-shadow: 0 0 50px rgba(0,255,255,0.2);
-  transition: transform 0.5s, box-shadow 0.5s;
+  max-width: 90%;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0,255,255,0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 header img:hover {
-  transform: scale(1.04);
-  box-shadow: 0 0 60px rgba(0,255,255,0.4);
-}
-
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 2.5rem;
-  }
-  header p {
-    font-size: 1.2rem;
-  }
-  .button {
-    padding: 0.7rem 1.8rem;
-    font-size: 0.9rem;
-  }
+  transform: scale(1.03);
+  box-shadow: 0 0 40px rgba(0,255,255,0.3);
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(30px); }
+  from { opacity: 0; transform: translateY(15px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
 section {
-  padding: 4rem 2rem;
-  max-width: 1100px;
+  padding: 3rem 1.5rem;
+  max-width: 1000px;
   margin: auto;
   border-bottom: 1px solid rgba(255,255,255,0.05);
-  backdrop-filter: blur(4px);
 }
 
 section h2 {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   color: #ffcc00;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 section p, li {
   font-size: 1.1rem;
-  line-height: 2;
-  letter-spacing: 0.5px;
+  line-height: 1.7;
   color: #dddddd;
 }
 
@@ -113,7 +84,7 @@ ul {
 }
 
 ul li {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 a {
@@ -126,45 +97,34 @@ a:hover {
 }
 
 .button {
-  background: rgba(0,255,225,0.8);
+  background: rgba(0,255,225,0.85);
   color: #0a0a0a;
-  padding: 0.9rem 2.2rem;
+  padding: 0.8rem 2rem;
   border-radius: 50px;
   text-transform: uppercase;
   font-weight: bold;
   display: inline-block;
   margin-top: 1.2rem;
-  box-shadow: 0 4px 15px rgba(0,255,225,0.3);
+  box-shadow: 0 4px 12px rgba(0,255,225,0.25);
   transition: background 0.3s, transform 0.3s;
-  animation: glow 2s ease-in-out infinite alternate;
-}
-
-@keyframes glow {
-  from {
-    box-shadow: 0 0 10px rgba(0,255,225,0.3);
-  }
-  to {
-    box-shadow: 0 0 20px rgba(0,255,225,0.6);
-  }
 }
 
 .button:hover {
   background: #00ccaa;
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
 
 footer {
   text-align: center;
-  padding: 3rem 2rem;
+  padding: 2rem 1rem;
   background: #1a1a1a;
-  font-size: 0.95rem;
-  color: #999;
+  font-size: 0.9rem;
+  color: #aaa;
 }
 
   </style>
 </head>
 <body>
-  <div id="stars"></div>
   <header>
     <h1>AlexithSpace</h1>
     <p>Sound. Story. Vision.</p>
