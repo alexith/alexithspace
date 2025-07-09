@@ -1,21 +1,45 @@
-# AlexithSpace
+AlexithSpace
 
-🌌 Welcome to **AlexithSpace** — the official creative hub of **Alexith**:  
-Music producer | Sci-fi writer | Digital artist | Indie game developer.
+Welcome to AlexithSpace — the creative universe of Alexith:
 
-## 🚀 Explore My Work:
-- 🎵 Music: [SoundCloud](https://soundcloud.com/alexithmusic) | [Bandcamp](https://alexith.bandcamp.com)
-- 🎨 Visuals: [Instagram](https://instagram.com/alexithspace) | [YouTube](https://youtube.com/@alexith)
-- 📖 Sci-fi Writing: Amazon KDP [Amazon KDP](https://www.amazon.com/dp/B0BZC317B1)
-- 🎮 Indie Games: In Development
+🎵 Music Producer
+📖 Sci-fi Writer
+🎨 Digital Artist
+🎮 Indie Game Developer
 
-## 📬 Contact:
-- Email: akshaycy2@gmail.com
-- Instagram DMs always open!
+🌌 About
 
-## 🌱 Vision:
-Blending sound, story, code, and visual art into experiences that explore existentialism, time, solitude, and resilience.
+I am Alexith — a boundary-pushing artist fusing sound, code, and story into immersive realities. My work explores themes of space, time, resilience, solitude, and the search for identity and freedom. Through soundscapes, sci-fi, digital art, and interactive games, I create portals for reflection and exploration of the unknown.
+
+🚀 Explore My Work
+
+Music: SoundCloud | Bandcamp
+
+Visuals: Instagram | YouTube
+
+Sci-fi Writing: Amazon KDP
+
+Indie Games: In Development
+
+
+📬 Contact & Collaborate
+
+Let’s co-create visionary worlds, soundscapes, and stories. Reach out to bring ideas to life or connect as fellow travelers of the unknown.
+
+Email: akshaycy2@gmail.com
+
+Instagram DM: @alexithspace
+
+SoundCloud Message: AlexithMusic
+
+
+🌱 Vision
+
+Through technology, art, and sound, I explore humanity’s ancient questions and future frontiers. Each creation is a signal from the depths of consciousness to those who seek the beauty of the unknown. Welcome to the cosmic diary of a wandering mind.
+
 
 ---
 
-Made with heart by **Alexith**.
+Site: alexith.github.io/alexithspace
+© 2025 AlexithSpace. Designed with heart, vision, and cosmic wonder by Alexith.
+
