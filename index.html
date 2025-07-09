@@ -9,38 +9,54 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: #0a0a0a;
+      background: linear-gradient(to bottom, #0a0a0a, #121212);
       color: #e0e0e0;
       overflow-x: hidden;
-    }
-    header {
-      background: linear-gradient(to bottom right, #0a0a0a, #1a1a1a);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 2rem;
-    }
-    header h1 {
-      font-size: 4rem;
-      color: #00ffe1;
-      letter-spacing: 3px;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.5rem;
-      color: #cccccc;
-      margin-bottom: 2rem;
-    }
-    header img {
-      max-width: 90%;
-      border-radius: 20px;
-      box-shadow: 0 0 60px rgba(0,255,255,0.3);
-    }section {
+    }header {
+  background: linear-gradient(to bottom right, #0a0a0a, #1a1a1a);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  animation: fadeIn 2s ease-out;
+}
+
+header h1 {
+  font-size: 4rem;
+  color: #00ffe1;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(0,255,225,0.5);
+}
+
+header p {
+  font-size: 1.4rem;
+  color: #cccccc;
+  margin-bottom: 2rem;
+}
+
+header img {
+  max-width: 90%;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0,255,255,0.2);
+  transition: transform 0.5s;
+}
+
+header img:hover {
+  transform: scale(1.03);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+section {
   padding: 5rem 2rem;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: auto;
   border-bottom: 1px solid rgba(255,255,255,0.05);
 }
@@ -75,6 +91,24 @@ a:hover {
   text-decoration: underline;
 }
 
+.button {
+  background: #00ffe1;
+  color: #0a0a0a;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
+  box-shadow: 0 4px 10px rgba(0,255,225,0.2);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background: #00ccaa;
+  transform: translateY(-2px);
+}
+
 footer {
   text-align: center;
   padding: 3rem 2rem;
@@ -89,10 +123,11 @@ footer {
   <header>
     <h1>AlexithSpace</h1>
     <p>Sound. Story. Vision.</p>
-    <img src="banner.png">
-  </header>  <section>
+    <img src="banner.png" alt="AlexithSpace Banner">
+    <a href="#about" class="button">Explore</a>
+  </header>  <section id="about">
     <h2>About Me</h2>
-    <p>I am <strong>Alexith</strong> — a boundary-pushing artist fusing sound, code, and story into immersive realities. My universe is built on themes of space, time, resilience, and the quest for identity and freedom. Through soundscapes, sci-fi, digital art, and interactive games, I tell stories that awaken something ancient and vast inside every soul.</p>
+    <p>I am <strong>Alexith</strong> — a multi-dimensional creator fusing music, stories, visuals, and code into transcendent experiences. My art reflects themes of solitude, time, resilience, and cosmic wonder — creating portals for reflection and inner exploration.</p>
   </section>  <section>
     <h2>🚀 Explore My Work</h2>
     <ul>
@@ -103,7 +138,7 @@ footer {
     </ul>
   </section>  <section>
     <h2>📬 Contact & Collaborate</h2>
-    <p>Let’s co-create visionary worlds, soundscapes, and stories. Reach out to bring ideas to life or to connect as fellow travelers of the unknown.</p>
+    <p>Let’s connect and build new worlds. For collaborations, commissions, or cosmic conversations, reach me here:</p>
     <ul>
       <li>Email: <a href="mailto:akshaycy2@gmail.com">akshaycy2@gmail.com</a></li>
       <li><a href="https://instagram.com/alexithspace" target="_blank">Instagram DM</a></li>
@@ -111,8 +146,8 @@ footer {
     </ul>
   </section>  <section>
     <h2>🌱 Vision</h2>
-    <p>Through technology, art, and sound, I explore humanity’s ancient questions and future frontiers. Each creation is a signal from the depths of consciousness to those who seek the beauty of the unknown. Welcome to the cosmic diary of a wandering mind.</p>
+    <p>I believe creativity is the last form of true magic — a gateway to explore identity, meaning, and imagination through timeless digital realms. Every creation is a signal — a memory from the future, calling others home to their own cosmic story.</p>
   </section>  <footer>
-    <p>&copy; 2025 AlexithSpace. Designed beyond the stars by <strong>Alexith</strong>.</p>
+    <p>&copy; 2025 AlexithSpace. Designed with love, vision, and code by <strong>Alexith</strong>.</p>
   </footer></body>
 </html>
