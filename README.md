@@ -1,4 +1,4 @@
-AlexithSpace
+ioAlexithSpace
 
 Welcome to AlexithSpace — the creative universe of Alexith:
 
@@ -26,7 +26,7 @@ Indie Games: In Development
 
 Let’s co-create visionary worlds, soundscapes, and stories. Reach out to bring ideas to life or connect as fellow travelers of the unknown.
 
-Email: akshaycy2@gmail.com
+Email: akshay.cy2@gmail.com
 
 Instagram DM: @alexithspace
 
