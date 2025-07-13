@@ -1,4 +1,4 @@
-ioAlexithSpace
+AlexithSpace
 
 Welcome to AlexithSpace — the creative universe of Alexith:
 
